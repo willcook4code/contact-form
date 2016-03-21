@@ -1,3 +1,15 @@
+body {
+  background: url(https://raw.githubusercontent.com/TIY-Austin-Front-End-Engineering/jquery-contact-form/master/bg.jpg) top left no-repeat;
+  background-size: cover; }
 
+section {
+  background: white; }
+
+button {
+  background: #1D1E2E;
+  color: white; }
+
+label {
+  padding-right: 55%; }
 
 /*# sourceMappingURL=main.css.map */
