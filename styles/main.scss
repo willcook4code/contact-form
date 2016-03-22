@@ -4,17 +4,28 @@ body {
 }
 section {
 	background: white;
-}
-button {
-	background-color: #1D1E2E;	
-	color: white;
-	transition: background-color 0.5s ease;
-
-}
-label {
-	padding-right: 55%;
-}
-
-.clicked {
-	background-color: #88C470;
+	margin: 8%;
+	h1 {
+		margin: 0.67em 0.5em;
+	}
+	form {
+		margin: 1em;
+    	display: block;
+    	clear: both;
+    	margin-right: 55%;
+		.box {
+			border-left: 0.3em solid black;
+			width: 80%;
+		}
+		button {
+			background-color: #1D1E2E;	
+			color: white;
+			transition: background-color 0.5s ease;
+			padding: 5% 10%;
+			margin-bottom: 1em;
+		}
+		.clicked {
+			background-color: #88C470;
+		}
+	}
 }

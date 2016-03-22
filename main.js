@@ -9,7 +9,7 @@ var webErr = $('#webErr');
 var msgErr = $('#msgErr');
 
 var error = function () {
-	$('p').css('color', 'red');
+	$('p').css({color: 'red', margin: '0'});
 	if (userName.val() === '') {
 		nameErr.html("Name cannot be left empty");
 	} else {
@@ -33,10 +33,21 @@ var error = function () {
 		msgErr.html("Name cannot be left empty");
 	} else {
 		msgErr.html("");
+	} 
+	if (nameErr.html() === '' && emailErr.html() === '' && webErr.html() === '' && msgErr.html() === '')  {
+		lastpg();
 	}
+	
 
 };
-
+var lastpg = function() {
+	$('section').replaceWith('<div>Thanks for contacting us, ' + userName.val() + '. We have received your message and will be in touch with you shortly.</div>');
+	$('div').css({background: 'white',
+		margin: '15% 5%',
+		padding: '5%',
+		textAlign: 'center'
+	});
+}
 
 form.on('submit', function(e){
 	e.preventDefault();
@@ -44,10 +55,10 @@ form.on('submit', function(e){
 });
 
 $('button').mouseover(function() {
-	$(this).toggleClass('clicked');
+	$(this).toggleClass('clicked')
 });
 
 $('button').mouseout(function() {
-	$(this).toggleClass('clicked');
+	$(this).toggleClass('clicked')
 });
 

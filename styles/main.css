@@ -3,17 +3,25 @@ body {
   background-size: cover; }
 
 section {
-  background: white; }
-
-button {
-  background-color: #1D1E2E;
-  color: white;
-  transition: background-color 0.5s ease; }
-
-label {
-  padding-right: 55%; }
-
-.clicked {
-  background-color: #88C470; }
+  background: white;
+  margin: 8%; }
+  section h1 {
+    margin: 0.67em 0.5em; }
+  section form {
+    margin: 1em;
+    display: block;
+    clear: both;
+    margin-right: 55%; }
+    section form .box {
+      border-left: 0.3em solid black;
+      width: 80%; }
+    section form button {
+      background-color: #1D1E2E;
+      color: white;
+      transition: background-color 0.5s ease;
+      padding: 5% 10%;
+      margin-bottom: 1em; }
+    section form .clicked {
+      background-color: #88C470; }
 
 /*# sourceMappingURL=main.css.map */
