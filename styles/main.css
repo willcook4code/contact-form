@@ -6,10 +6,14 @@ section {
   background: white; }
 
 button {
-  background: #1D1E2E;
-  color: white; }
+  background-color: #1D1E2E;
+  color: white;
+  transition: background-color 0.5s ease; }
 
 label {
   padding-right: 55%; }
+
+.clicked {
+  background-color: #88C470; }
 
 /*# sourceMappingURL=main.css.map */

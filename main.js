@@ -44,8 +44,10 @@ form.on('submit', function(e){
 });
 
 $('button').mouseover(function() {
-	$('button').animate(500, function() {
-		$('button').css({'background': '#88C470'})})});
+	$(this).toggleClass('clicked');
+});
 
-
+$('button').mouseout(function() {
+	$(this).toggleClass('clicked');
+});
 
